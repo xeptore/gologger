@@ -16,18 +16,18 @@ import (
 ```
 ### APIs
 *
-	```go
-Log(msg string)
-	```
-	logs `msg` to output  with a _yellow_ title color.  
-	  
-	example:
-	```go
-	gologger.Log(time.Now().String())
-	```
-	output:  
-	
-	![screenshot from 2019-01-03 09-47-41](https://user-images.githubusercontent.com/29199390/50625353-dc4d0400-0f3c-11e9-91f1-3b8ade9af2ce.png)
+    ```go
+    Log(msg string)
+    ```
+    logs `msg` to output  with a _yellow_ title color.  
+
+    example:
+    ```go
+    gologger.Log(time.Now().String())
+    ```
+    output:  
+
+    ![screenshot from 2019-01-03 09-47-41](https://user-images.githubusercontent.com/29199390/50625353-dc4d0400-0f3c-11e9-91f1-3b8ade9af2ce.png)
 
 
 -------
