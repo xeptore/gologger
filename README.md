@@ -20,6 +20,7 @@ import (
 	Log(msg string)
 	```
 	logs `msg` to output  with a _yellow_ title color.  
+	  
 	example:
 	```go
 	gologger.Log(time.Now().String())
@@ -32,7 +33,8 @@ import (
 	```go
 	Logv(v interface{})
 	```
-	like `.Log`, useful for logging any type of variable.
+	like `.Log`, useful for logging any type of variable.  
+	  
 	example:
 	```go
 	v := map[string]int{
@@ -41,7 +43,7 @@ import (
 	}
 	gologger.Logv(v)
 	```
-	output:
+	output:  
 	_an image_
 
 ------
@@ -49,12 +51,13 @@ import (
 	```go
 	Error(msg string)
 	```
-	logs `msg` to output  with a _red_ title color.
+	logs `msg` to output  with a _red_ title color.  
+	  
 	example:
 	```go
 	gologger.Error("could not find configuration file.")
 	```
-	output:
+	output:  
 	_an image_
 
 ---
@@ -62,12 +65,13 @@ import (
 	```go
 	Warn(msg string)
 	```
-	logs `msg` to output  with a _orange_ title color.
+	logs `msg` to output  with a _orange_ title color.  
+	  
 	example:
 	```go
 	gologger.Warn("a warning message")
 	```
-	output:
+	output:  
 	_an image_
 
 ----
@@ -75,12 +79,13 @@ import (
 	```go
 	Success(msg string)
 	```
-	logs `msg` to output  with a _green_ title color.
+	logs `msg` to output  with a _green_ title color.  
+	  
 	example:
 	```go
 	gologger.Success("successfully connected to database.")
 	```
-	output:
+	output:  
 	_an image_
 
 ---
