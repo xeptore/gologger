@@ -35,7 +35,7 @@ import (
 	```go
 	Logv(v interface{})
 	```
-	like `.Log`, useful for logging any type of variable.  
+	logs `msg` to output  with a _blue_ title color. useful for logging any type of variable.  
 	  
 	example:
 	```go
