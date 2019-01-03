@@ -23,11 +23,11 @@ import (
 
     example:
     ```go
-    gologger.Log(time.Now().String())
+    gologger.Log(time.Now().UTC().Format(time.RFC3339))
     ```
     output:  
 
-    ![screenshot from 2019-01-03 09-47-41](https://user-images.githubusercontent.com/29199390/50625353-dc4d0400-0f3c-11e9-91f1-3b8ade9af2ce.png)
+    ![screenshot from 2019-01-03 10-03-30](https://user-images.githubusercontent.com/29199390/50625705-043d6700-0f3f-11e9-8cbf-42ad23fcce98.png)
 
 
 -------
