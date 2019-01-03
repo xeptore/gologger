@@ -1,4 +1,4 @@
-package main
+package gologger
 
 type configType struct {
 	Colors     map[string]colorKind `yaml:"colors"`
