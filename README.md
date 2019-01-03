@@ -122,6 +122,8 @@ following functions can be used to achive this:
     WarnFatal(msg string)
     ```
 
+---
+
 ### Config
 You can change colors by changing the color ASCII codes in `config.go` file and rebuilding the packge.
 ASCII color codes reference _(like almost anything else!)_ can be found in [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit).
