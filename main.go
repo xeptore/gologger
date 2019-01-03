@@ -13,9 +13,7 @@ func Log(msg string) {
 }
 
 func LogFatal(msg string) {
-	endl()
 	Log(msg)
-	endl()
 	exit(0)
 }
 
@@ -37,7 +35,6 @@ func Error(msg string) {
 }
 
 func ErrorFatal(msg string) {
-	endl()
 	Error(msg)
 	endl()
 	exit(2)
@@ -49,7 +46,6 @@ func Success(msg string) {
 }
 
 func LogvFatal(v interface{}) {
-	endl()
 	Logv(v)
 	endl()
 	exit(0)
