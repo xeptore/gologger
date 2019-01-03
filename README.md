@@ -11,7 +11,7 @@ go get -u github.com/xeptore/gologger
 first of all `import` package:
 ```go
 import (
-	"github.com/xeptore/gologger"
+    "github.com/xeptore/gologger"
 )
 ```
 ### APIs
