@@ -22,7 +22,6 @@ var (
 
 func main() {
 	Build()
-	Error("heeeey!")
 }
 
 func Build() error {
