@@ -19,12 +19,12 @@ import (
 	```go
 	Log(msg string)
 	```
-	logs `msg` to output  with a _yellow_ title color.
+	logs `msg` to output  with a _yellow_ title color.  
 	example:
 	```go
 	gologger.Log(time.Now().String())
 	```
-	output:
+	output:  
 	_an image_
 
 -------
