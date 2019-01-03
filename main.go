@@ -1,43 +1,11 @@
 package gologger
 
-import (
-	yaml "gopkg.in/yaml.v2"
-)
-
 const (
 	escape             = "\x1b["
 	reset              = escape + "0m"
 	fgStylePlaceholder = escape + "%s;38;5;%sm%s" + reset
 	fgPlaceholder      = escape + "38;5;%sm%s" + reset
 )
-
-var (
-	config     configType
-	styleReset string
-	colorReset string
-	bgReset    string
-)
-
-func main() {
-	Build()
-}
-
-func Build() error {
-	bytes, err := readConfigFile()
-	if err != nil {
-		return err
-	}
-
-	err = yaml.Unmarshal(*bytes, &config)
-	if err != nil {
-		return err
-	}
-
-	styleReset = itoa(config.Styles["reset"])
-	colorReset = itoa(config.ColorReset)
-
-	return nil
-}
 
 func Log(msg string) {
 	color := config.Colors["yellow"]

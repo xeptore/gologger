@@ -2,20 +2,10 @@ package gologger
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 	"strconv"
 	"strings"
 )
-
-func readConfigFile() (*[]byte, error) {
-	// absPath, _ := filepath.Abs("./config.yml")
-	bytes, err := ioutil.ReadFile("./config.yml")
-	if err != nil {
-		return &[]byte{}, err
-	}
-	return &bytes, nil
-}
 
 func log(title, message string, foreground colorKind) {
 	fg := itoa(foreground.Light)
@@ -37,7 +27,7 @@ func logTitle(title, fg string) {
 }
 
 func logMessage(msg string) {
-	fmt.Printf(fgPlaceholder, colorReset, msg)
+	fmt.Printf(fgPlaceholder, itoa(config.ColorReset), msg)
 }
 
 func logVariable(v interface{}) {
