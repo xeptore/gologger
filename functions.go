@@ -4,12 +4,14 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 )
 
 func readConfigFile() (*[]byte, error) {
-	bytes, err := ioutil.ReadFile("config.yml")
+	absPath, _ := filepath.Abs("./config.yml")
+	bytes, err := ioutil.ReadFile(absPath)
 	if err != nil {
 		return &[]byte{}, err
 	}
