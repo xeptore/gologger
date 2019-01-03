@@ -1,8 +1,6 @@
 package gologger
 
 import (
-	"fmt"
-
 	yaml "gopkg.in/yaml.v2"
 )
 
@@ -34,8 +32,6 @@ func Build() error {
 	if err != nil {
 		return err
 	}
-
-	fmt.Println(config)
 
 	styleReset = itoa(config.Styles["reset"])
 	colorReset = itoa(config.ColorReset)
