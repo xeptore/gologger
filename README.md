@@ -17,7 +17,7 @@ import (
 ### APIs
 *
 	```go
-	Log(msg string)
+Log(msg string)
 	```
 	logs `msg` to output  with a _yellow_ title color.  
 	  
