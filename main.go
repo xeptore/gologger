@@ -23,7 +23,6 @@ func Warn(msg string) {
 }
 
 func WarnFatal(msg string) {
-	endl()
 	Warn(msg)
 	endl()
 	exit(1)
