@@ -48,7 +48,7 @@ func Success(msg string) {
 	log("Ok", msg, color)
 }
 
-func LogFatalv(v interface{}) {
+func LogvFatal(v interface{}) {
 	endl()
 	Logv(v)
 	endl()
