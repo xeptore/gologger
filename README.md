@@ -26,7 +26,9 @@ import (
 	gologger.Log(time.Now().String())
 	```
 	output:  
-	_an image_
+	
+	![screenshot from 2019-01-03 09-47-41](https://user-images.githubusercontent.com/29199390/50625353-dc4d0400-0f3c-11e9-91f1-3b8ade9af2ce.png)
+
 
 -------
 *
@@ -44,7 +46,8 @@ import (
 	gologger.Logv(v)
 	```
 	output:  
-	_an image_
+	
+	![screenshot from 2019-01-03 09-48-02](https://user-images.githubusercontent.com/29199390/50625344-cf301500-0f3c-11e9-9fd5-7498ab5ebce6.png)
 
 ------
 *
@@ -58,7 +61,8 @@ import (
 	gologger.Error("could not find configuration file.")
 	```
 	output:  
-	_an image_
+	
+	![screenshot from 2019-01-03 09-47-16](https://user-images.githubusercontent.com/29199390/50625336-c63f4380-0f3c-11e9-9263-4828ca16e151.png)
 
 ---
 *
@@ -72,7 +76,8 @@ import (
 	gologger.Warn("a warning message")
 	```
 	output:  
-	_an image_
+	
+	![screenshot from 2019-01-03 09-46-55](https://user-images.githubusercontent.com/29199390/50625327-b889be00-0f3c-11e9-9ab1-0cb07c8d85c9.png)
 
 ----
 *
@@ -86,7 +91,8 @@ import (
 	gologger.Success("successfully connected to database.")
 	```
 	output:  
-	_an image_
+	
+	![screenshot from 2019-01-03 09-40-20](https://user-images.githubusercontent.com/29199390/50625273-40bb9380-0f3c-11e9-9aa8-38d04bd7a5b7.png)
 
 ---
 
